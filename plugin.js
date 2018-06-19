@@ -1,9 +1,9 @@
-'use strict'
-
-var riot = Npm.require('riot')
+const riot = require('riot-compiler')
 
 function compileFile(file) {
-  var source, output
+  let source = null
+  let output = null
+
   try {
     source = file.getContentsAsString()
     output = riot.compile(source)
@@ -24,6 +24,4 @@ RiotCompiler.prototype.processFilesForTarget = function (files) {
   files.forEach(compileFile)
 }
 
-Plugin.registerCompiler({ extensions: [ 'tag' ] }, function () {
-  return new RiotCompiler()
-})
+Plugin.registerCompiler({ extensions: [ 'tag' ] }, () => new RiotCompiler())
