@@ -1,4 +1,4 @@
-const riot = require('riot-compiler')
+const riot = Npm.require('riot-compiler')
 
 function compileFile(file) {
   let source = null

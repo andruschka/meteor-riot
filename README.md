@@ -6,6 +6,9 @@ This package does 2 things:
 - it compiles all the Riot .tag files in your project to plain Javascript, using the riot compliler
 - it creates a small Riot mixin under 'Meteor.riotMixin' to use reactive data sources inside a Riot tag
 
+You only have to add the riot script tag to the head section of your app.
+`<script src="https://cdn.jsdelivr.net/npm/riot@3.1/riot.min.js"></script>`
+
 # Why use Riot?
 
 Because it is easy to learn, easy to use, and it is tiny, especially when compared to React or Blaze.

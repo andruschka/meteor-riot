@@ -8,6 +8,7 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: 'riot-compiler',
+  use: ['ecmascript@0.11.1'],
   sources: [ 'plugin.js' ],
   npmDependencies: {
     'riot-compiler': '3.5.1'
